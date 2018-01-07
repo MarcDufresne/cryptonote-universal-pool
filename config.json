@@ -1,9 +1,8 @@
 {
-    "coin": "ducknote",
-    "symbol": "XDN",
-    "coinUnits": 100000000,
+    "coin": "m0rkcoin",
+    "symbol": "M0RK",
+    "coinUnits": 1000000000000,
     "coinDifficultyTarget": 240,
-
     "logging": {
         "files": {
             "level": "info",
@@ -19,7 +18,7 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "ddehi53dwGSBEXdhTYtga2R3fS4y9hRz4YHAsLABJpH75yUd5EDQmuL3yDBj1mG6MMeDfydY9vp4zFVVNQ99FTYq2PpsFJP2y",
+        "poolAddress": "fmrkrcoMKHfgZR9P49QaJe6dWNYi6bzf91crnrgqyBpicK8TcJ1actW5WTW4dq1F8NUmEuN6hnFk11xHPSsVBgzm8EXU7AtZ3my",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "ports": [
@@ -46,16 +45,12 @@
             }
         ],
         "varDiff": {
-            "minDiff": 100,
-            "maxDiff": 200000,
+            "minDiff": 2,
+            "maxDiff": 100000,
             "targetTime": 100,
             "retargetTime": 30,
             "variancePercent": 30,
             "maxJump": 100
-        },
-        "fixedDiff": {
-            "enabled": true,
-            "addressSeparator": "."
         },
         "shareTrust": {
             "enabled": true,
@@ -69,18 +64,22 @@
             "time": 600,
             "invalidPercent": 25,
             "checkThreshold": 30
+        },
+        "fixedDiff": {
+            "enabled": true,
+            "addressSeparator": "."
         }
     },
 
     "payments": {
         "enabled": true,
-        "interval": 600,
+        "interval": 300,
         "maxAddresses": 50,
-        "mixin": 3,
-        "transferFee": 50000000,
-        "minPayment": 1000000000,
+        "mixin": 0,
         "maxTransactionAmount": 0,
-        "denomination": 1000000000
+        "transferFee": 5000000000,
+        "minPayment": 1000000000000,
+        "denomination": 1000000000000
     },
 
     "blockUnlocker": {
@@ -88,9 +87,9 @@
         "interval": 30,
         "depth": 10,
         "poolFee": 2,
-        "devDonation": 0.1,
-        "coreDevDonation": 0.1,
-        "extraFeaturesDevDonation":0.1
+        "devDonation": 0.0,
+        "extraFeaturesDevDonation":0.0,
+        "coreDevDonation": 0.0
     },
 
     "api": {
@@ -100,24 +99,23 @@
         "port": 8117,
         "blocks": 30,
         "payments": 30,
-        "password": "your_password"
+        "password": "test"
     },
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 42081
+        "port": 18112
     },
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 8082
+        "port": 8070
     },
 
     "redis": {
         "host": "127.0.0.1",
         "port": 6379
     },
-
     "monitoring": {
         "daemon": {
             "checkInterval": 60,
@@ -125,7 +123,7 @@
         },
         "wallet": {
             "checkInterval": 60,
-            "rpcMethod": "getbalance"
+            "rpcMethod": "getBalance"
         }
     },
 
