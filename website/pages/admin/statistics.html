@@ -17,10 +17,6 @@
 
 		var password = docCookies.getItem('password');
 
-		if(!password || promptPassword) {
-			password = prompt('Enter admin password');
-		}
-
 		$('#loading').show();
 		$.ajax({
 			url: api + '/admin_stats',
