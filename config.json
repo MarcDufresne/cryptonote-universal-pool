@@ -2,7 +2,7 @@
     "coin": "m0rkcoin",
     "symbol": "M0RK",
     "coinUnits": 1000000000000,
-    "coinDifficultyTarget": 240,
+    "coinDifficultyTarget": 120,
     "logging": {
         "files": {
             "level": "info",
