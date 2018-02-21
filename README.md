@@ -363,22 +363,22 @@ var api = "http://poolhost:8117";
 var poolHost = "poolhost.com";
 
 /* IRC Server and room used for embedded KiwiIRC chat. */
-var irc = "irc.freenode.net/#ducknote";
+var irc = "irc.freenode.net/#m0rkcoin";
 
 /* Contact email address. */
 var email = "support@poolhost.com";
 
 /* Market stat display params from https://www.cryptonator.com/widget */
-var cryptonatorWidget = ["XDN-BTC", "XDN-USD", "XDN-EUR"];
+var cryptonatorWidget = ["M0RK-USD"];
 
 /* Download link to cryptonote-easy-miner for Windows users. */
-var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
+var easyminerDownload = "";
 
 /* Used for front-end block links. */
-var blockchainExplorer = "http://chainradar.com/{symbol}/block/{id}";
+var blockchainExplorer = "https://explore.m0rk.space/blocks/{id}";
 
 /* Used by front-end transaction links. */
-var transactionExplorer = "http://chainradar.com/{symbol}/transaction/{id}";
+var transactionExplorer = "https://explore.m0rk.space/transactions/{id}";
 
 /* Any custom CSS theme for pool frontend */
 var themeCss = "themes/default-theme.css";
