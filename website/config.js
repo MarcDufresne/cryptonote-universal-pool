@@ -10,9 +10,9 @@ var cryptonatorWidget = [];
 
 var easyminerDownload = "https://github.com/MarcDufresne/cryptonote-easy-miner/releases/";
 
-var blockchainExplorer = "https://explore.m0rk.space/blocks/{id}";
+var blockchainExplorer = "https://explorer.m0rk.space/blocks/{id}";
 
-var transactionExplorer = "https://explore.m0rk.space/transactions/{id}";
+var transactionExplorer = "https://explorer.m0rk.space/transactions/{id}";
 
 var themeCss = "themes/default-theme.css";
 
